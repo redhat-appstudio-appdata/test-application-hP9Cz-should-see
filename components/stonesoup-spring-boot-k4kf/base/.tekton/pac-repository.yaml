@@ -1,0 +1,15 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: test-application
+    appstudio.openshift.io/component: stonesoup-spring-boot-k4kf
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: stonesoup-spring-boot-k4kf
+  namespace: cmoullia-tenant
+spec:
+  url: https://github.com/ch007m/stonesoup-spring-boot
