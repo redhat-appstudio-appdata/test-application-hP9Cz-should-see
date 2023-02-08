@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: stonesoup-spring-boot-k4kf
+  namespace: cmoullia-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:fbc1f1fee42593c98b59a7542bcda922d899ff7d48dcf4f11c00027a4904b369
+        name: container-image
+        resources: {}
+status: {}
