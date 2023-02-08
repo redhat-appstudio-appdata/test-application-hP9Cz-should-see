@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: stonesoup-spring-boot
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:stonesoup-spring-boot
+      - image: quay.io/redhat-appstudio/user-workload@sha256:6c7f6f7bc40027eba3cc2863f16cfa0aecaabaa573346aa55abeb5ac112d7c3b
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
