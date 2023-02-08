@@ -23,7 +23,10 @@ spec:
         app.kubernetes.io/instance: stonesoup-spring-boot-k4kf
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:cmoullia-tenant-stonesoup-spring-boot-k4kf
+      - env:
+        - name: bar
+          value: kube
+        image: quay.io/redhat-appstudio/user-workload:cmoullia-tenant-stonesoup-spring-boot-k4kf
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
