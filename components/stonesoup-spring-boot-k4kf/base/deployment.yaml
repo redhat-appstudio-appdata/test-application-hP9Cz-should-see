@@ -26,7 +26,7 @@ spec:
       - env:
         - name: bar
           value: kube
-        image: quay.io/redhat-appstudio/user-workload:cmoullia-tenant-stonesoup-spring-boot-k4kf
+        image: quay.io/redhat-appstudio/user-workload@sha256:fbc1f1fee42593c98b59a7542bcda922d899ff7d48dcf4f11c00027a4904b369
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
